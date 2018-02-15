@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.medical_calculatorericw.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="316dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtTitle"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/txtWeight"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="223dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radKiloToLb"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_weight="1"
+            android:text="@string/radKiloToLb" />
+
+        <RadioButton
+            android:id="@+id/radLbToKilo"
+            android:layout_width="232dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="@string/radLbToKilo" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/txtResult"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="@string/btnConvert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
